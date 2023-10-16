@@ -391,9 +391,17 @@ class MultimodalGPT_Interface(nn.Module):
 
 #### Fine-Grained Perception
 ##### MSCOCO-MCI
+```bash
+--dataset_name MSCOCO --formulation SingleChoice --dataset_config build/configs/MulticlassIdentification_val.yaml
+```
 ##### MSCOCO-GOI
+```bash
+--dataset_name MSCOCO --formulation SingleChoice --dataset_config build/configs/GroundedObjIdentification_val.yaml
+```
 ##### MSCOCO-MOS
-
+```bash
+--dataset_name MSCOCO --formulation SingleChoice --dataset_config build/configs/MissingObjectSelection_val.yaml
+```
 ##### TDIUC-Color
 ```bash
 --dataset_name TDIUC --formulation SingleChoice --dataset_config build/configs/TDIUC_color.yaml
@@ -495,6 +503,59 @@ class MultimodalGPT_Interface(nn.Module):
 ```
 
 #### Visually Scene Recognition
+##### IC15
+``` bash
+--dataset_name IC15 --formulation OCROpenEnded --dataset_config build/configs/GroundOCR_ic15_val.yaml
+```
+``` bash
+--dataset_name IC15 --formulation OCROpenEnded --dataset_config build/configs/OCR_ic15_val.yaml
+```
+
+##### COCO_Text
+``` bash
+--dataset_name COCO_text --formulation OCROpenEnded --dataset_config build/configs/GroundOCR_cocotext_val.yaml
+```
+``` bash
+--dataset_name COCO_text --formulation OCROpenEnded --dataset_config build/configs/OCR_cocotext_val.yaml
+```
+
+##### TextOCR
+``` bash
+--dataset_name TextOCR --formulation OCROpenEnded --dataset_config build/configs/GroundOCR_textocr_val.yaml
+```
+``` bash
+--dataset_name TextOCR --formulation OCROpenEnded --dataset_config build/configs/OCR_textocr_val.yaml
+```
+
+##### CUTE80
+``` bash
+--dataset_name CUTE80 --formulation OCROpenEnded --dataset_config build/configs/OCR_cute80_val.yaml
+```
+
+##### IIIT5K
+``` bash
+--dataset_name IIIT5K --formulation OCROpenEnded --dataset_config build/configs/OCR_iiit5k_val.yaml
+```
+
+##### WordArt
+``` bash
+--dataset_name WordArt --formulation OCROpenEnded --dataset_config build/configs/OCR_wordart_val.yaml
+```
+
+##### FUNSD
+``` bash
+--dataset_name FUNSD --formulation KIEOpenEnded --dataset_config build/configs/KIE_funsd_val.yaml
+```
+
+##### POIE
+``` bash
+--dataset_name POIE --formulation KIEOpenEnded --dataset_config build/configs/KIE_poie_val.yaml
+```
+
+##### SROIE
+``` bash
+--dataset_name SROIE --formulation KIEOpenEnded --dataset_config build/configs/KIE_sroie_val.yaml
+```
 
 ##### TextVQA
 ``` bash
@@ -509,6 +570,22 @@ class MultimodalGPT_Interface(nn.Module):
 ##### OCR-VQA
 ``` bash
 --dataset_name OCR --formulation OCROpenEnded --dataset_config build/configs/OCR_ocrvqa_val.yaml
+```
+
+#### Spatial Understanding 
+##### CLEVR
+``` bash
+--dataset_name CLEVR --formulation SingleChoice --dataset_config build/configs/Spatial_clevr_val.yaml
+```
+
+##### VSR
+``` bash
+--dataset_name VSR --formulation SingleChoice --dataset_config build/configs/Spatial_vsr_val.yaml
+```
+
+##### MP3D
+``` bash
+--dataset_name MP3D --formulation SingleChoice --dataset_config build/configs/Spatial_mp3d_val.yaml
 ```
 
 ## 🚀 Evaluation
